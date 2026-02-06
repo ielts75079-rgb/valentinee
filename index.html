@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rose Day Proposal 🌹</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(to bottom, #fff1f5, #ffd6de);
+      font-family: Georgia, serif;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .container {
+      position: relative;
+      top: 20%;
+      transform: translateY(-20%);
+      z-index: 1;
+    }
+
+    h1 {
+      color: #c9184a;
+      font-size: 42px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      color: #444;
+      width: 80%;
+      margin: 12px auto;
+      line-height: 1.7;
+    }
+
+    /* Falling roses */
+    .rose {
+      position: fixed;
+      font-size: 28px;
+      cursor: pointer;
+      animation: fall 6s linear infinite;
+      color: #c9184a;
+    }
+
+    @keyframes fall {
+      from { top: -10%; opacity: 1; }
+      to { top: 110%; opacity: 0; }
+    }
+
+    /* Stick-figure boy */
+    .boy {
+      position: absolute;
+      bottom: 20px;
+      left: -50px;
+      width: 50px;
+      height: 100px;
+      animation: walk 5s forwards;
